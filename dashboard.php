@@ -3,6 +3,21 @@ require_once 'includes/config.php';
 require_once 'includes/auth.php';
 require_once 'includes/tasks.php';
 
+function buscarFraseMotivacional() {
+    $url = "https://zenquotes.io/api/today";
+    $response = @file_get_contents($url);
+    if ($response === FALSE) {
+        return "Mantenha o foco e continue!";
+    }
+    $data = json_decode($response, true);
+    if (isset($data[0]['q']) && isset($data[0]['a'])) {
+        return $data[0]['q'] . " — " . $data[0]['a'];
+    }
+    return "Mantenha o foco e continue!";
+}
+
+$fraseMotivacional = buscarFraseMotivacional();
+
 verificarAutenticacao();
 
 $filtro = $_GET['filtro'] ?? 'todas';
@@ -134,6 +149,9 @@ $tarefasPendentes = $totalTarefas - $tarefasConcluidas;
         <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h5 class="mb-0"><i class="bi bi-list-task"></i> Tarefas</h5>
+                <div class="alert alert-info text-center" role="alert">
+                    <i class="bi bi-lightbulb"></i> <?php echo htmlspecialchars($fraseMotivacional); ?>
+                </div>
                 <span class="badge bg-primary"><?php echo $totalTarefas; ?> tarefas</span>
             </div>
             <div class="card-body">
