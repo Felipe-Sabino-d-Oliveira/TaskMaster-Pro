@@ -1,0 +1,52 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.task-card {
+    border-left: 4px solid #6c757d;
+    transition: transform 0.2s;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+}
+
+.task-card.alta {
+    border-left-color: #dc3545;
+}
+
+.task-card.media {
+    border-left-color: #ffc107;
+}
+
+.task-card.baixa {
+    border-left-color: #198754;
+}
+
+.task-card.concluida {
+    opacity: 0.8;
+    background-color: #f8f9fa;
+}
+
+.completed-text {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.stats-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+.form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
