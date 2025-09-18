@@ -1,6 +1,30 @@
-body {
-    background-color: #f8f9fa;
+
+/* Para a página index */
+body.index {
+    background-image: url('https://img.freepik.com/premium-photo/list-icon-notebook-with-completed-todo-list-3d-render_471402-428.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+body.index .form-container {
+    background: rgba(255, 255, 255, 0.7); /* branco com 70% de opacidade */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Para a página dashboard */
+body.dashboard {
+    background-image: url('https://cdn.wildrocket.io/media/JWKzdonTttBD2UGQ0R28nLSLX4I0pYdADrV1FnU6.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
 
 .task-card {
     border-left: 4px solid #6c757d;
