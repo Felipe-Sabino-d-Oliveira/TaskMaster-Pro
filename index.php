@@ -63,7 +63,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="alert alert-danger"><?php echo $erro; ?></div>
   <?php endif; ?>
 
-  <div class="form-container">
+  <div class="form-container" style="
+    background: rgba(255, 255, 255, 0.85); /* branco com 70% de opacidade */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
     <!-- Login -->
     <div class="mb-4">
       <h5 class="text-center mb-3">Login</h5>

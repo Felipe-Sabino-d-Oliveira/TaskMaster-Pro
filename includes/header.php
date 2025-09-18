@@ -8,7 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body class="index">
+<body style="
+background-image: url('https://cdn.wildrocket.io/media/JWKzdonTttBD2UGQ0R28nLSLX4I0pYdADrV1FnU6.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="dashboard.php">
