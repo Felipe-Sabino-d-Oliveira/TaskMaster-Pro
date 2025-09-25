@@ -64,6 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <?php endif; ?>
 
   <div class="form-container" style="
+    width: 50%;
     background: rgba(255, 255, 255, 0.85); /* branco com 70% de opacidade */
     padding: 2rem;
     border-radius: 15px;
